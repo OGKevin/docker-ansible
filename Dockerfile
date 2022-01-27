@@ -2,4 +2,6 @@ FROM ubuntu:20.04
 
 RUN apt-get update -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    sshpass ansible
+    sshpass ansible python3-pip
+
+RUN pip3 install setuptools
